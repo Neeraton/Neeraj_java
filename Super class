@@ -1,0 +1,30 @@
+class A //super class
+{
+int a=10;
+void show()
+{
+	System.out.println("Neeraj");
+}
+}
+class B extends A //sub class
+
+{
+  int a=29;
+	
+	void show()
+	{
+		super.show();
+		System.out.println("Nazzem");
+	System.out.println(a);
+	System.out.println(super.a);
+	}
+}
+public class superclass {
+
+	public static void main(String[] args) {
+	B r=new B();
+	r.show();
+
+	}
+
+}
