@@ -1,0 +1,31 @@
+public class classandobject {
+	
+	int wt=120;
+	int age=40;
+	String name="neeraj";
+	String colour="light";
+	
+	void eat()
+	{
+		System.out.println("Eating");
+	}
+	void run()
+	{
+		System.out.println("Running");
+	}
+
+	public static void main(String[] args) {
+		
+		classandobject c=new classandobject();
+		System.out.println("Name =" +c.name);
+		System.out.println("Weight = "+c.wt);
+		
+		System.out.println("Age = "+c.age);
+		System.out.println("colour = "+c.colour);
+		c.eat();
+		c.run();
+		
+
+	}
+
+}
