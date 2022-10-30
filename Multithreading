@@ -1,0 +1,47 @@
+class Thread1 extends Thread
+{
+	public void run()
+	{
+		int[] odd= {1,3,5,7,9};
+		try
+		{
+			for(int i=0;i<odd.length;i++)
+			{
+				System.out.println(odd[i]);
+				sleep(200);
+			}
+		}
+		catch(Exception e) {}
+		
+		
+	}
+}
+class Thread2 extends Thread
+{
+	public void run()
+	{
+		int[] even= {2,4,6,8};
+		try
+		{
+			for(int i=0;i<even.length;i++)
+			{
+				System.out.println(even[i]);
+				sleep(200);
+			}
+		}
+		catch(Exception d) {
+			
+		}
+	}
+}
+public class Threadviva {
+
+	public static void main(String[] args) {
+		
+Thread1 t=new Thread1();
+Thread2 t2=new Thread2();
+t.start();
+t2.start();
+	}
+
+}
