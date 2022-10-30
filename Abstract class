@@ -1,0 +1,39 @@
+abstract class Area
+{
+	abstract void Square(float x);
+	abstract void Rect(float x,float y);
+	abstract void Circle(float r);
+}
+class displayArea extends Area
+{
+
+	@Override
+	void Square(float d) {
+		System.out.println("Area of Square = "+d*d);
+		}
+
+	@Override
+	void Rect(float x, float y) {
+		
+		System.out.println("Area of Rectangle = "+x*y);
+	}
+
+	@Override
+	void Circle(float r) {
+		
+		System.out.println("Area of Circle = "+(3.14*r*r));
+	}
+	
+}
+public class viva3 {
+
+	public static void main(String[] args) {
+	
+		displayArea a=new displayArea();
+		a.Square(5);
+		a.Rect(4, 50);
+		a.Circle(10);
+
+	}
+
+}
