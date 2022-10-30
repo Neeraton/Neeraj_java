@@ -1,0 +1,40 @@
+class Base 
+{
+	void show()
+	{
+		System.out.println("base class");
+	}
+}
+class base1 extends Base 
+{
+	void show()
+	{
+		System.out.println("base1 class");
+	}
+}
+class base2 extends Base 
+{
+	void show()
+	{
+		System.out.println("base2 class");
+	}
+}
+
+public class baseclass {
+
+	public static void main(String[] args) {
+		
+Base b=new Base();
+base1 b1=new base1();
+base2 b2=new base2();
+Base a;
+a=b;
+a.show();
+a=b1;
+a.show();
+a=b2;
+a.show();
+
+	}
+
+}
