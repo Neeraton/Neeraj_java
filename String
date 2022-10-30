@@ -1,0 +1,15 @@
+public class stringclass {
+
+	public static void main(String[] args) {
+		String str="neeraj chaurasia";
+		int b=str.length();
+		System.out.println(b);
+		
+		System.out.println(str.toUpperCase());
+		System.out.println(str.toLowerCase());
+		String str2="meeraj";
+		System.out.println(str.compareTo(str2));
+
+	}
+
+}
