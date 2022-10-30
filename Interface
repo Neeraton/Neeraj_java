@@ -1,0 +1,39 @@
+interface Rectangle1 {
+	void Display(float x,float y);
+}
+class Area1 implements Rectangle1
+{
+
+	@Override
+	public void Display(float x, float y) {
+		System.out.println("Area of Rectangle is :"+x*y);
+		
+	}
+	
+}
+class perimeter implements Rectangle1
+{
+
+	@Override
+	public void Display(float x, float y) {
+		System.out.println("Area of Perimeter is :"+2*(x+y));
+		
+	}
+	
+}
+public class viva1_interface {
+
+	public static void main(String[] args) {
+		
+Area1 a=new Area1();
+Rectangle1 r;
+r=a;
+r.Display(33, 100);
+
+perimeter p=new perimeter();
+r=p;
+r.Display(50, 50);
+
+	}
+
+}
