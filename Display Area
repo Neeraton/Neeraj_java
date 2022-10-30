@@ -1,0 +1,22 @@
+class Shape {
+	void Area(float a)
+	{
+		float area=a*a;
+		System.out.println("Area of Square = "+area);
+	}
+	void Area(float a,float b)
+	{
+		float area=a*b;
+		System.out.println("Area of Rectangle = "+area);
+	}
+}
+public class Disparea {
+
+	public static void main(String[] args) {
+		Shape s=new Shape();
+		s.Area(4);
+		s.Area(3, 5);
+		
+	}
+
+}
