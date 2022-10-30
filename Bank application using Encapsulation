@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+class Bank
+{
+	private double  bal=5000;
+	private int pwd;
+	public void Deposited(double money)
+	{
+		System.out.println("Enter the Password :");
+		Scanner s=new Scanner(System.in);
+		pwd=s.nextInt();
+		if(pwd==6393)
+		{
+		System.out.println("Deposited amount :"+money);
+		bal=bal+money;
+		System.out.println("Total amount  :"+bal);
+		}
+		else
+		{
+			System.out.println("try again!!");
+		}
+	}
+	public void Withdraw(double money)
+	{
+		System.out.println("Enter the Password :");
+		Scanner s=new Scanner(System.in);
+		pwd=s.nextInt();
+		if(pwd==6393)
+		{
+		System.out.println("Withdraw amount :"+money);
+		bal=bal-money;
+		System.out.println("Total amount  :"+bal);
+		}
+		else
+		{
+			System.out.println("Try again!!");
+		}
+	}
+	
+	public void checkbal()
+	{
+		System.out.println("Enter the Password :");
+		Scanner s=new Scanner(System.in);
+		pwd=s.nextInt();
+		if(pwd==6393)
+		{
+		
+		System.out.println("Total amount  :"+bal);
+		}
+		else
+		{
+			System.out.println("Try again!!");
+		}
+	}
+	
+	
+}
+    class Encapsulation_ {
+	
+
+	public static void main(String[] args) {
+		 int ch;
+		Bank b=new Bank();
+
+		System.out.println("1.Deposite :");
+		System.out.println("2.Withdraw :");
+		System.out.println("3.check balance :\n\n");
+		
+			System.out.println("Enter your choice :");
+			Scanner s2=new Scanner(System.in);
+			ch=s2.nextInt();
+		
+		switch(ch)
+		{
+		case 1: b.Deposited(1000);
+		break;
+		case 2: b.Withdraw(500);
+		break;
+		case 3: b.checkbal();
+		break;
+		default :
+		System.out.println("Invalid choice!!");
+		break;
+		}
+		
+
+	
+	}
+}
