@@ -1,0 +1,53 @@
+class Student
+{
+	public int rollno=0;
+	public String sname=null;
+	public void getData_e(String name,int id)
+	{
+		rollno=id;
+		sname=name;
+	}
+	public void show_s()
+	{
+		System.out.println("Name ="+sname+"               Id number ="+rollno);
+	}
+}
+class Marks extends Student
+{
+	public int m=0;
+	public int p=0;
+	public void getData_m(int marks,int n1)
+	{
+		m=marks;
+		p=n1;
+	}
+	public void show_m()
+	{
+		System.out.println("Maths ="+m+"                 Physics ="+p);
+	}
+	
+}
+class Total extends Marks
+{
+	
+	void show1()
+	{
+		System.out.println("Total marks ="+(m+p));
+	}
+	
+}
+public class singleviva {
+
+	public static void main(String[] args) {
+		
+		Total o=new Total();
+		o.getData_e("Neeraj",5);
+		o.show_s();
+		
+		o.getData_m(88,90);
+		o.show_m();
+		
+		o.show1();
+	}
+
+}
