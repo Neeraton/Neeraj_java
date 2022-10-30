@@ -1,0 +1,16 @@
+public class A {
+	
+	int a=10;  //instance varriable
+	static double b=20.9; //static varriable
+	boolean c=true;  //local varriable
+
+	public static void main(String[] args) {
+		System.out.println("neeraj chaurasia");
+		A s=new A();
+		System.out.println(s.a);
+		System.out.println(s.b);
+		System.out.println(s.c);
+
+	}
+
+}
