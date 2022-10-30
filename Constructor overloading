@@ -1,0 +1,40 @@
+class Square
+{
+	void Square(float a)
+	{
+		float area=a*a;
+		System.out.println("Area of the Square is :"+area);
+	}
+	void Square(double a)
+	{
+		double area=a*a;
+		System.out.println("Area of the Square is :"+area);
+	}
+}
+class Rectangle {
+	void Rectangle(float x,float y)
+	{
+		float area=x*y;
+		System.out.println("Area of the Rectangle is :"+area);
+	}
+	void Rectangle(double x,double y)
+	{
+		double area=x*y;
+		System.out.println("Area of the Rectangle is :"+area);
+	}
+}
+public class Viva6 {
+
+	public static void main(String[] args) {
+		
+		Square s=new Square();
+		s.Square(5.5);
+		s.Square(3.6);
+		
+		Rectangle r=new Rectangle();
+		r.Rectangle(4.5, 10);
+		r.Rectangle(40, 5.50);
+
+	}
+
+}
