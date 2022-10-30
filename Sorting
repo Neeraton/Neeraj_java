@@ -1,0 +1,26 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class shortarray {
+
+	public static void main(String[] args) {
+	int a[]=new int[5];
+	System.out.println("Enter the array elements:");
+	Scanner sc=new Scanner(System.in);
+	for(int i=0;i<5;i++)
+	{
+		a[i]=sc.nextInt();
+	}
+	Arrays.sort(a);
+	System.out.println("Arrays elements :");
+	for(int b : a)
+	{
+		System.out.println(b+ " ");
+	}
+	
+	
+
+	}
+
+}
