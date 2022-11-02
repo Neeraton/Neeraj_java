@@ -76,7 +76,12 @@ public class Abstrct {
 		       	String name="union bank of india";
 		    	String ifsc="ib5005";
 					Bankservice b=new Bankservice();
+					int  e='y';
 					System.out.println("Bank :"+name+"                     IFSC code :"+ifsc);
+					System.out.println("*****************************************************************");
+					while(e=='y')
+					{
+					
 					System.out.println("\n1.Deposite :");
 					System.out.println("2.Withdraw :");
 					System.out.println("3.check balance :\n\n");
@@ -92,14 +97,14 @@ public class Abstrct {
 					case 2: b.Withdraw();
 					break;
 					case 3: b.checkbal();
+					e='n';
 					break;
 					default :
 					System.out.println("Invalid choice!!");
 					break;
 					}
 					
+					}
 
 					
 			}	
-
-	}
